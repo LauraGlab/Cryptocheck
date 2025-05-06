@@ -1,0 +1,71 @@
+.coinPage {
+    align-items: center;
+    column-gap: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 70svh;
+    padding-bottom: 14%;
+    padding-top: 1rem;
+}
+
+.coinPageFirstSection,
+.coinPageSecondSection,
+.coinPagePriceChangePerSection,
+.coinPageThirdSection {
+    width: 95%;
+}
+
+.coinPageFirstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.coinPageSecondSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+}
+
+@media (min-width: 769px) {
+    .coinPage{
+        padding-bottom: 4%;
+    }
+
+    .infoWrapper{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .coinPageFirstSection {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .coinPage {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        min-height: 90vh;
+        padding: 2% 3% 3%;
+    }
+
+    .coinPageFirstSection,
+    .coinPageSecondSection,
+    .coinPagePriceChangePerSection,
+    .coinPageThirdSection {
+        width: 100%;
+    }
+
+    .coinPageSecondSection {
+        border-top: none;
+        column-gap: 5%;
+        display: grid;
+        grid-template-columns: 55% 40%;
+        margin: 0 auto;
+    }
+}

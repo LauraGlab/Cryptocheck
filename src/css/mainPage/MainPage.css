@@ -1,0 +1,180 @@
+.bckgr {
+    background: linear-gradient(30deg in hsl shorter hue, var(--white) 25%, var(--blue), var(--orange));
+    height: 100svh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.headerWrapper{
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.coinsStatsSection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 9;
+}
+
+.cryptoSection {
+    align-items: center;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto 4rem;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.legendRow__section {
+    display: none;
+}
+
+.loadingCoinsText {
+  color: var(--light-gray);
+  text-align: center;
+  margin: 1rem 0;
+  font-size: var(--fs-md);
+}
+
+@media (min-width: 435px) {
+    .bckgr {
+        background: linear-gradient(30deg in hsl shorter hue, var(--white) 75%, var(--blue), var(--orange));
+        z-index: 0;
+    }
+
+    .cryptoSection {
+        border: 1px solid gray;
+        margin: 1rem auto 4rem;
+        padding-top: 1rem;
+        width: 400px;
+    }
+}
+
+@media (min-width: 520px) {
+    .cryptoSection {
+        width: 510px;
+    }
+}
+
+@media (min-width: 580px) {
+    .cryptoSection {
+        padding-top: 0;
+        width: 545px;
+    }
+
+    .legendRow__section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: var(--fs-xs);
+        justify-content: center;
+        padding: 1.5rem 4rem 0;
+        width: 450px;
+    }
+
+    .legendRow {
+        display: grid;
+        grid-template-columns: 16% 30% 20% 22%;
+        max-width: 360px;
+        padding-bottom: 1.2rem;
+        width: 100%;
+    }
+
+    .legendFirst, 
+    .legendSecond {
+        text-align: left;
+    }
+
+    .legendThird, 
+    .legendFourth {
+        text-align: right;
+    }
+
+    .legendGraph {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .cryptoSection {
+        width: 560px;
+    }
+}
+
+@media (min-width: 690px) {
+    .cryptoSection {
+        width: 660px;
+    }
+
+    .legendRow__section {
+        width: 440px;
+    }
+
+    .legendRow {
+        max-width: 440px;
+    }
+}
+
+@media (min-width: 850px) {
+    .cryptoSection {
+        width: 820px;
+    }
+
+    .legendRow__section {
+        width: 550px;
+    }
+
+    .legendRow {
+        grid-template-columns: 12% 20% 24% 19% 25%;
+        max-width: 550px;
+    }
+
+    .legendGraph {
+        display: block;
+        margin-right: 2rem;
+        text-align: right;
+    }
+}
+
+@media (min-width: 1050px) {
+    .cryptoSection {
+        width: 1010px;
+    }
+
+    .legendRow__section {
+        width: 710px;
+    }
+
+    .legendRow {
+        max-width: 710px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .cryptoSection {
+        width: 1100px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .legendRow__section {
+        width: 790px;
+    }
+
+    .legendRow {
+        max-width: 790px;
+    }
+
+    .cryptoSection {
+        width: 1200px;
+    }
+}

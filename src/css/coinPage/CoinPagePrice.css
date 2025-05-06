@@ -1,0 +1,123 @@
+.coinPagePrice {
+  font-size: var(--fs-3xl);
+}
+
+.coinPagePriceWrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.coinPagePriceRed,
+.coinPagePriceGreen {
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.3rem;
+}
+
+.coinPagePriceRed {
+  background-color: #df865386;
+  color: var(--orange);
+  min-width: 45px;
+}
+
+.coinPagePriceGreen {
+  background-color: #5353e450;
+  color: var(--blue);
+  min-width: 45px;
+}
+
+.priceChangeGreen,
+.priceChangeRed {
+  align-items: center;
+  border-bottom: 1px solid #535353;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.greenPrice {
+  background-color: #5353e450;
+  border-radius: 0.5rem;
+  color: var(--blue);
+  margin-left: 5.5rem;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.redPrice {
+  background-color: #df865386;
+  border-radius: 0.5rem;
+  color: var(--orange);
+  margin-left: 5.5em;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.coinPagePriceChangeSection {
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 335px) {
+  .coinPagePrice {
+    font-size: 2.625rem;
+  }
+}
+
+@media (min-width: 435px) {
+  .coinPagePrice__section {
+    padding: 0.5rem 0 1rem;
+  }
+
+  .coinPagePrice {
+    font-size: 2.75rem;
+  }
+
+  .coinPagePriceChangeSection {
+    padding: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .coinPagePriceChangeSection {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .coinPagePrice__section {
+    padding: 0;
+  }
+
+  .coinPagePriceWrapper {
+    justify-content: right;
+  }
+
+  .coinPagePrice{
+    font-size: var(--fs-3xl);
+  }
+
+  .priceChangeTitle{
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .priceChangeGreen,
+  .priceChangeRed {
+    border: none;
+    flex-direction: row;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+
+  .greenPrice,
+  .redPrice {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .coinPagePrice__section {
+    padding: 1.5rem 0 1rem;
+  }
+}

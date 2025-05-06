@@ -1,0 +1,33 @@
+.coinPageSparklineSection {
+  padding-bottom: 1rem;
+}
+
+.sparklineTitle {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.7rem 0;
+}
+
+.sparklineTitle h4 {
+  font-size: var(--fs-md);
+}
+
+.sparklineTitle p {
+  color: var(--light-gray);
+  font-size: var(--fs-sm);
+  text-align: right;
+}
+
+.sparkline{
+    height: 300px;
+    width: 100%;
+}
+
+@media (min-width: 1025px){
+    .sparkline{
+        height: 250px;
+        width: 100%;
+    }
+}

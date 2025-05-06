@@ -1,0 +1,42 @@
+.loading {
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out forwards;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999999999999999999;
+}
+
+.loaderText {
+  font-size: var(--fs-3xl);
+  font-weight: bold;
+  background: linear-gradient(30deg, var(--blue), var(--orange), var(--blue));
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 3s ease-in-out infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

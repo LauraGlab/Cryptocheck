@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  --black: #000000;
+  --blue: #5353e4;
+  --border-color: #535353;
+  --converterColor1: #e0e0e0;
+  --converterColor2: #a7a7a7;
+  --dark-blue: #2176de;
+  --gray: #232323;
+  --light-gray: #939393;
+  --orange: #df8653;
+  --pink: #b95b8d;
+  --white: #f6f5f5;
+
+  /* Typography scale (based on 14px) */
+  font-size: 14px;
+  --fs-xs: 0.75rem;   /* ~10.5px */
+  --fs-sm: 0.875rem;  /* ~12.25px */
+  --fs-base: 1rem;    /* 14px */
+  --fs-md: 1.125rem;  /* ~15.75px */
+  --fs-lg: 1.25rem;   /* ~17.5px */
+  --fs-xl: 1.5rem;    /* ~21px */
+  --fs-2xl: 2rem;     /* ~28px */
+  --fs-3xl: 2.5rem;   /* ~35px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif, Arial, Helvetica;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensures full viewport height */
+  min-width: 300px;   /* Prevents horizontal overflow */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  position: relative;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark/light theme */
+}
+
+.app {
+  background-color: var(--white);
+  color: var(--black);
+  min-height: 100vh; /* Ensures the app takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Themes */
+.dark {
+  --black: #ebebeb;
+  --converterColor1: #0D0D0D;
+  --converterColor2: #1A1A1A;
+  --white: #000000;
+}
+
+.light {
+  --black: #000000;
+  --converterColor1: #cdcdcd;
+  --converterColor2: #969696;
+  --white: #ebebeb;
+}
+
+/* Pop-up */
+.backgroundBlur {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.233);
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh; 
+  justify-content: center;
+  padding: 48px 0px 58px;
+  pointer-events: auto;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  transition: all 0.2s ease-in 0s;
+  width: 100%;
+  z-index: 999;
+}
+
+.window {
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 700px;
+  padding: 1rem 1.4rem;
+  position: relative;
+  transform: translateY(20px); 
+  transition: all 0.2s ease-in;
+  width: 80%;
+  z-index: 999999;
+}
+
+.closeIcon__section {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0 1rem;
+  width: 100%;
+}
+
+.closeIcon path {
+  stroke: var(--black);
+}

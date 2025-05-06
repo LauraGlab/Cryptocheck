@@ -1,0 +1,33 @@
+.errorWindow {
+  align-items: center;
+  background: linear-gradient(30deg, var(--blue), var(--orange), var(--blue));
+  background-size: 200% auto;
+  animation: gradientMove 6s ease infinite;
+  color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.errorWindow h2{
+    font-size: var(--fs-3xl);
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.errorWindow p{
+    font-size: var(--fs-base);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

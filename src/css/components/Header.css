@@ -1,0 +1,33 @@
+.title__section {
+    height: 5svh;
+    position: relative;
+    z-index: 101;
+}
+
+.titleWrapper {
+    width: auto;
+}
+
+.title {
+    font-size: var(--fs-xl); 
+}
+
+@media (min-width: 435px) {
+    .title__section {
+        height: auto;
+    }
+
+    .titleWrapper {
+        width: 100%;
+    }
+
+    .title {
+        font-size: var(--fs-lg);
+    }
+}
+
+@media (min-width: 520px) {
+    .title__section {
+        z-index: 9;
+    }
+}
