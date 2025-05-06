@@ -12,7 +12,6 @@
   - [Theming and Currency Options](#theming-and-currency-options)
   - [User-Friendly Interface](#user-friendly-interface)
 - [Usage](#usage)
-- [Project Screenshots](#project-screenshots)
 - [Built with](#built-with)
 - [License](#license)
 
@@ -53,14 +52,6 @@ CryptoCheck is a powerful web application designed for cryptocurrency enthusiast
 4. Use the comparison tool to analyze the market cap-based price of one coin against another.
 5. View detailed coin information, convert between currencies, and explore historical data.
 6. Toggle between light and dark mode for a personalized experience.
-
-## Project Screenshots
-
-<div>
-  <img src="src/assets/readme/cryptocheck-screenshot2.png" alt="CryptoCheck Home Page" width="800">
-  <img src="src/assets/readme/cryptocheck-screenshot3.png" alt="CryptoCheck Coin Page" width="800">
-  <img src="src/assets/readme/cryptocheck-screenshot4.png" alt="CryptoCheck Coin Page" width="800">
-</div>
 
 ## Built with:
 - **React.js** - A JavaScript library for building user interfaces.
