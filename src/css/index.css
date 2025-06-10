@@ -13,16 +13,15 @@
   --pink: #b95b8d;
   --white: #f6f5f5;
 
-  /* Typography scale (based on 14px) */
   font-size: 14px;
-  --fs-xs: 0.75rem;   /* ~10.5px */
-  --fs-sm: 0.875rem;  /* ~12.25px */
-  --fs-base: 1rem;    /* 14px */
-  --fs-md: 1.125rem;  /* ~15.75px */
-  --fs-lg: 1.25rem;   /* ~17.5px */
-  --fs-xl: 1.5rem;    /* ~21px */
-  --fs-2xl: 2rem;     /* ~28px */
-  --fs-3xl: 2.5rem;   /* ~35px */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem; 
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem; 
+  --fs-2xl: 2rem; 
+  --fs-3xl: 2.5rem;
 }
 
 * {
@@ -39,18 +38,18 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  /* Ensures full viewport height */
-  min-width: 300px;   /* Prevents horizontal overflow */
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
   position: relative;
   width: 100%;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark/light theme */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .app {
   background-color: var(--white);
   color: var(--black);
-  min-height: 100vh; /* Ensures the app takes at least full viewport height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
